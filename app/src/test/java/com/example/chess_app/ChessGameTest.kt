@@ -1,5 +1,9 @@
 package com.example.chess_app
 
+import com.example.chess_app.model.ChessGame
+import com.example.chess_app.model.Piece
+import com.example.chess_app.model.PieceType
+import com.example.chess_app.model.Player
 import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
