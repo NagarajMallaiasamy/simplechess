@@ -1,15 +1,13 @@
-package com.example.chess_app
+package com.samnagaraj.simplechess
 
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
-import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 
 class ChessBoardView @JvmOverloads constructor(

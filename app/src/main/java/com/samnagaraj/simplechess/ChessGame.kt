@@ -1,4 +1,4 @@
-package com.example.chess_app
+package com.samnagaraj.simplechess
 
 enum class Player {
     WHITE, BLACK

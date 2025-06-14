@@ -26,14 +26,20 @@
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M 9.5 25.5 A 0.5 0.5 0 1 1 8.5,25.5 A 0.5 0.5 0 1 1 9.5 25.5 z"/>
-    <path
-        android:fillColor="#FFFFFF"
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="1.5"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:pathData="M 15 15.5 A 0.5 1.5 0 1 1  14,15.5 A 0.5 1.5 0 1 1  15 15.5 z"
-        android:transformMatrix="0.866,0.5,-0.5,0.866,9.693,-5.173"/>
+    <group
+        android:scaleX="0.866"
+        android:scaleY="0.866"
+        android:translateX="9.693"
+        android:translateY="-5.173"
+        android:rotation="30">
+      <path
+          android:fillColor="#FFFFFF"
+          android:strokeColor="#FFFFFF"
+          android:strokeWidth="1.5"
+          android:strokeLineCap="round"
+          android:strokeLineJoin="round"
+          android:pathData="M 15 15.5 A 0.5 1.5 0 1 1  14,15.5 A 0.5 1.5 0 1 1  15 15.5 z"/>
+    </group>
     <path
         android:fillColor="#FFFFFF"
         android:strokeWidth="0"

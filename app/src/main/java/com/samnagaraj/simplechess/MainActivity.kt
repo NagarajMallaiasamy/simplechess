@@ -1,47 +1,19 @@
 package com.samnagaraj.simplechess
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.samnagaraj.simplechess.ui.theme.SimpleChessTheme
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            SimpleChessTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        // Create an instance of ChessGame
+        val chessGame = ChessGame()
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SimpleChessTheme {
-        Greeting("Android")
+        // Create an instance of ChessBoardView and pass the ChessGame instance
+        val chessBoardView = ChessBoardView(this, chessGame = chessGame)
+
+        // Set the ChessBoardView as the content view
+        setContentView(chessBoardView)
     }
 }
