@@ -1,4 +1,6 @@
-package com.example.chess_app.model
+package com.samnagaraj.simplechess.model
+
+import androidx.compose.runtime.mutableStateListOf
 
 enum class Player {
     WHITE, BLACK

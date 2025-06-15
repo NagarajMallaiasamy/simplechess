@@ -1,4 +1,4 @@
-package com.example.chess_app.ui
+package com.samnagaraj.simplechess.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -13,8 +13,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.chess_app.model.ChessGame
-import com.example.chess_app.model.Piece
+import com.samnagaraj.simplechess.model.ChessGame
+import com.samnagaraj.simplechess.model.Piece
 
 @Composable
 fun GameStateDisplay(chessGame: ChessGame, modifier: Modifier = Modifier) {

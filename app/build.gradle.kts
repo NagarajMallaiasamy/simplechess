@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.samnagaraj.simplechess"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.samnagaraj.simplechess"

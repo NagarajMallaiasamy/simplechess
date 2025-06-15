@@ -1,4 +1,4 @@
-package com.example.chess_app.ui
+package com.samnagaraj.simplechess.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -16,14 +16,15 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
 import kotlin.math.roundToInt
 // R import is not directly needed here if getDrawableResIdForPiece handles it
-import com.example.chess_app.model.ChessGame
-import com.example.chess_app.model.Piece
-import com.example.chess_app.model.Player
-import com.example.chess_app.model.PieceType
-import com.example.chess_app.ui.theme.DarkBrown
-import com.example.chess_app.ui.theme.LightBrown
+import com.samnagaraj.simplechess.model.ChessGame
+import com.samnagaraj.simplechess.model.Piece
+import com.samnagaraj.simplechess.model.Player
+import com.samnagaraj.simplechess.model.PieceType
+import com.samnagaraj.simplechess.ui.theme.DarkBrown
+import com.samnagaraj.simplechess.ui.theme.LightBrown
 // getDrawableResIdForPiece will be imported from DrawableMappings.kt
 
 
